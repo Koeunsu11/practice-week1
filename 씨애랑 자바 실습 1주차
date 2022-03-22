@@ -1,0 +1,30 @@
+//씨애랑 자바 실습 1주차
+
+package practice;
+
+import java.util.*;
+
+
+public class week1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner input = new Scanner( System.in);
+		
+		System.out.println("정수 하나를 입력하시오.: ");
+		
+		int x = input.nextInt();
+		
+		int y = ((x%10)*1) + (((x%100-x%10)/10)*2) + (((x%1000-x%100)/100)*2*2 + ((x-x%1000)/1000)*2*2*2);
+		
+		System.out.println(y);
+		
+		
+		
+		
+		
+	}
+
+}
+
+
